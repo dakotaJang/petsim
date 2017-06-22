@@ -24,6 +24,7 @@ def sample():
     emissions = 5 # number of emissions per point
 
     sinogram = PETscan(x0,y0,slitWidth,d,dx,dphi,emissions)
+    showResult(sinogram)
     return sinogram
 
 # rotate point cloud by dphi
@@ -72,7 +73,6 @@ def PETscan(x0,y0,slitWidth,d,dx,dphi,emissions):
             print("phi_progress = %f,x_progress = %f" % (100.0 * hh / sinogram.shape[1], 100.0 * ii / sinogram.shape[0]))
         x, y = rotatePointCloud(x0, y0, dphi * (hh + 1))
     print("phi_progress = 100,x_progress = 100")
-    showResult(sinogram)
     return sinogram
 
 # show plots
