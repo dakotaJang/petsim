@@ -6,7 +6,7 @@ The online version is available at the link below.
 You can manipulate some key parameters to experiment with different settings.
 (Parameter that you can modify are limited on online version)
 
-http://petsim.dakotajang.me/petsim/
+http://petsim.dakotajang.me/
 
 ## Requirements
 + python
